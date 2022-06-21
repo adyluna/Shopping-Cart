@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 class MissionCard extends React.Component {
   render() {
-    const { name, year, country, destination } = this.props;
+    const { mission } = this.props;
+    const { name, year, country, destination } = mission;
 
     return (
       <div data-testid="mission-card">
@@ -25,10 +26,14 @@ class MissionCard extends React.Component {
 }
 
 MissionCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  year: PropTypes.string.isRequired,
-  country: PropTypes.string.isRequired,
-  destination: PropTypes.string.isRequired,
+  mission: PropTypes.shape(
+    {
+      name: PropTypes.string.isRequired,
+      year: PropTypes.string.isRequired,
+      country: PropTypes.string.isRequired,
+      destination: PropTypes.string.isRequired,
+    },
+  ).isRequired,
 };
 
 export default MissionCard;
