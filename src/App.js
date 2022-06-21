@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
-import SolarSystem from './SolarSystem';
+import Header from '../src/components/Header';
+import SolarSystem from '../src/components/SolarSystem';
 
 class App extends React.Component {
   render() {
