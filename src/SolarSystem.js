@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 class SolarSystem extends React.Component {
-    render() {
-        return (
-            <div data-testid="solar-system">
-                <p>Testing</p>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div data-testid="solar-system">
+        <p>Testing</p>
+      </div>
+    );
+  }
 }
 
 export default SolarSystem;
